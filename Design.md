@@ -12,6 +12,7 @@ What Bookkeeper does:
         - Keeps a running total of different statistics such as average score, total books and total pages read
 
 How Bookkeeper works:
+
     Front end:
         Bookkeeper uses html and css for the styling of it's web pages. It relies much less heavily on bootstrap compared to
         other projects and strives to look a bit less like most websites. It does look less like the "average" website
