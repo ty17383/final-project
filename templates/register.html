@@ -1,0 +1,17 @@
+{% extends "template.html" %}
+{% block main %}
+<form action="/register" method="post">
+   <h2>Register</h2>
+   <div class="form-group">
+      <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+   </div>
+   <div class="form-group">
+      <input class="form-control" name="password" placeholder="Password" type="password">
+   </div>
+   <div class="form-group">
+      <input class="form-control" name="confirmation" placeholder="Confirm Pasword" type="password">
+   </div>
+   <button class="btn btn-primary" type="submit">Register</button>
+</form>
+{% endblock %}
+

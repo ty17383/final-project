@@ -1,0 +1,22 @@
+{% extends "template.html" %}
+{% block main %}
+<h2>To Read</h2>
+<table class="table table-striped">
+<thead>
+   <tr>
+      <th><a href="/to_title">Title</a></th>
+      <th><a href="/to_author">Author</a></th>
+      <th><a href="/to_series">Series</a></th>
+   </tr>
+</thead>
+<tbody>
+   {% for book in books %}
+   <tr>
+      <td>{{ book.title }}</td>
+      <td>{{ book.author }}</td>
+      <td>{{ book.series }}</td>
+   </tr>
+   {% endfor %}
+</tbody>
+{% endblock %}
+

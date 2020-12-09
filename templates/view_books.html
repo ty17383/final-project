@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+{% block main %}
+<h2>Books Read</h2>
+<table class="table table-striped">
+<thead>
+   <tr>
+      <th><a href="/view_title">Title</a></th>
+      <th><a href="/view_author">Author</a></th>
+      <th><a href="/view_series">Series</a></th>
+      <th><a href="/view">Year Finished</a></th>
+      <th><a href="/view">Month Finished</a></th>
+      <th><a href="/view_rating">Rating</a></th>
+   </tr>
+</thead>
+<tbody>
+   {% for book in books %}
+   <tr>
+      <td>{{ book.title }}</td>
+      <td>{{ book.author }}</td>
+      <td>{{ book.series }}</td>
+      <td>{{ book.year_finished }}</td>
+      <td>{{ book.month_finished }}</td>
+      <td>{{ book.rating }}</td>
+   </tr>
+   {% endfor %}
+</tbody>
+{% endblock %}
+

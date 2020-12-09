@@ -1,0 +1,25 @@
+{% extends "template.html" %}
+<h1>Main Page</h1>
+{% block main %}
+<div>
+   <div class="b1">
+      <h2 class="box_h">Total Books Read:</h2>
+      <h2>{{ fields.book_count }}</h2>
+   </div>
+   <div class="b1">
+      <h2 class="box_h">Total Pages:</h2>
+      <h2>{{ fields.page_count }}</h2>
+   </div>
+</div>
+<div>
+   <div class="b1">
+      <h2 class="box_h">Books to read:</h2>
+      <h2>{{ fields.to_read }}</h2>
+   </div>
+   <div class="b1">
+      <h2 class="box_h">Average score:</h2>
+      <h2>{{ fields.rating }}</h2>
+   </div>
+</div>
+{% endblock %}
+

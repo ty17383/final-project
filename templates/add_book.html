@@ -1,0 +1,24 @@
+{% extends "template.html" %}
+{% block main %}
+<form action="/add" method="post">
+   <h2>Add Book</h2>
+   <div class="form-group">
+      <input autocomplete="off" autofocus class="form-control" name="title" placeholder="Title" type="text">
+   </div>
+   <div class="form-group">
+      <input class="form-control" autocomplete="off" name="author" placeholder="Author" type="text">
+   </div>
+   <div class="form-group">
+      <input class="form-control" autocomplete="off"  name="series" placeholder="Series (if applicable)" type="text">
+   </div>
+   <div class="form-group">
+      <input class="form-control" autocomplete="off" min="1" name="pages" placeholder="Page Count" type="number">
+   </div>
+   <div>
+      <input type="checkbox" id="finished" name="finished" value="finished">
+      <label for="finished"> Book already finished</label><br>
+   </div>
+   <button class="btn btn-primary" type="submit">Add Book</button>
+</form>
+{% endblock %}
+
